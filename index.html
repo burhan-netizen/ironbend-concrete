@@ -1,0 +1,917 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="preload" as="image" href="img/hero-slab-site.webp" type="image/webp">
+<title>Ironbend Concrete Co. | Slab Foundations in San Antonio, TX</title>
+<meta name="description" content="Ironbend Concrete Co. Slab foundations and turnkey concrete for South Texas homebuilders since 1994. San Antonio, TX. Concept website by Mago Labs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,700..900&family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600;700&family=Rye&display=swap">
+<style>
+/* Layout: Lone Star poster. Black concrete ground, electric-blue Texas as the hero object, loud wide italic type, Texas red only on stars. */
+:root{
+  --black:#07090F;
+  --black-2:#10131C;
+  --concrete:#E4E3DE;
+  --concrete-2:#CFCDC6;
+  --blue:#1E3CFF;
+  --blue-hi:#5C73FF;
+  --red:#E0262F;
+  --white:#F7F6F2;
+  --mute:#9097A8;
+  --mute-dark:#5A5F6B;
+  --f-display:"Archivo","Arial Black","Helvetica Neue",Arial,sans-serif;
+  --f-west:"Rye","Rockwell Extra Bold",Rockwell,Georgia,serif;
+  --f-body:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-label:"Barlow Semi Condensed","Arial Narrow",Arial,sans-serif;
+  --gl:max(16px, env(safe-area-inset-left, 0px));
+  --gr:max(16px, env(safe-area-inset-right, 0px));
+  --ease:cubic-bezier(.2,.75,.1,1);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;background:var(--black);color:var(--white);font:400 18px/1.6 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{max-width:100%;display:block}
+main,footer{overflow-x:clip}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3,h4{margin:0;font-family:var(--f-display);font-style:italic;font-weight:900;font-stretch:108%;line-height:.98;letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance;overflow-wrap:break-word}
+.wrap{max-width:1280px;margin:0 auto;padding-left:var(--gl);padding-right:var(--gr)}
+.label{font:700 14px/1 var(--f-label);letter-spacing:.2em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px}
+.label .st{width:14px;height:14px;color:var(--red);flex:none}
+:focus-visible{outline:3px solid var(--blue-hi);outline-offset:3px;border-radius:4px}
+.grain{position:relative;isolation:isolate}
+.grain::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.5;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:90;background:var(--black)}
+
+/* demo banner */
+.demo{background:var(--white);color:var(--black);font:600 13.5px/1.35 var(--f-body);text-align:center;padding-block:8px}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:80;background:rgba(7,9,15,.82);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);border-bottom:1px solid rgba(255,255,255,.07)}
+.top .wrap{display:flex;align-items:center;gap:28px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex:none}
+.logo{height:50px;width:auto;display:block;overflow:visible}
+.lg-b{fill:var(--blue)}
+.lg-i{fill:var(--white)}
+.lg-n{font:900 italic 30px var(--f-display);font-stretch:112%;letter-spacing:-.01em;fill:var(--white)}
+.lg-s{font:700 10.5px var(--f-label);letter-spacing:.2em;fill:#C9CDD8}
+.brand .lg-b{transition:transform .5s var(--ease);transform-box:fill-box;transform-origin:center}
+.brand:hover .lg-b{transform:rotate(-8deg) scale(1.06)}
+.logo-ft{height:76px}
+.prog{position:fixed;left:0;right:0;top:0;height:3px;z-index:95;background:linear-gradient(90deg,var(--blue),var(--blue-hi));transform-origin:left;transform:scaleX(var(--p,0));pointer-events:none}
+.nav{display:flex;gap:28px;margin-left:auto}
+.nav a{text-decoration:none;font:700 15px/1 var(--f-label);letter-spacing:.14em;text-transform:uppercase;color:#C9CDD8;padding-block:8px;position:relative}
+.nav a:hover{color:#fff}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.nav a:hover::after{transform:scaleX(1)}
+
+/* buttons: liquid-metal, Mago standard */
+.btn{--h:56px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:var(--h);padding:0 28px;border-radius:6px;font:700 16px/1 var(--f-label);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;border:0;cursor:pointer;position:relative;overflow:hidden;isolation:isolate;white-space:nowrap;transition:transform .15s ease}
+.btn svg{width:19px;height:19px;flex:none}
+.btn::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.42) 47%,rgba(255,255,255,.62) 50%,rgba(255,255,255,.42) 53%,transparent 65%);transform:translateX(-130%);opacity:0;transition:opacity .2s}
+.btn:hover::before,.btn:focus-visible::before{opacity:1;animation:sweep .85s ease}
+@keyframes sweep{from{transform:translateX(-130%)}to{transform:translateX(130%)}}
+.btn::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;border-radius:inherit;box-shadow:inset 0 1px 0 rgba(255,255,255,.28),inset 0 -2px 0 rgba(0,0,0,.3)}
+.btn:active{transform:translateY(1px) scale(.985)}
+.btn-blue{background:linear-gradient(180deg,#4762FF 0%,#1E3CFF 55%,#1229D6 100%);color:#fff;box-shadow:0 14px 34px -12px rgba(30,60,255,.8)}
+.btn-white{background:linear-gradient(180deg,#fff 0%,#F4F3EF 55%,#E3E1DA 100%);color:var(--black)}
+.btn-white::before{background:linear-gradient(105deg,transparent 35%,rgba(7,9,15,.07) 47%,rgba(7,9,15,.12) 50%,rgba(7,9,15,.07) 53%,transparent 65%)}
+.btn-line{background:transparent;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
+.btn-line:hover{box-shadow:inset 0 0 0 2px #fff}
+.btn-sm{--h:46px;padding:0 18px;font-size:14.5px}
+.ripple{position:absolute;z-index:-1;pointer-events:none;width:20px;height:20px;border-radius:50%;transform:translate(-50%,-50%) scale(0);background:radial-gradient(circle,rgba(255,255,255,.5) 0%,rgba(255,255,255,0) 70%);animation:rip .6s ease forwards}
+.btn-white .ripple{background:radial-gradient(circle,rgba(7,9,15,.2) 0%,rgba(7,9,15,0) 70%)}
+@keyframes rip{from{transform:translate(-50%,-50%) scale(0);opacity:.9}to{transform:translate(-50%,-50%) scale(4);opacity:0}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:48px 40px;background:radial-gradient(70% 60% at 75% 40%,rgba(30,60,255,.28),transparent 70%),var(--black)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:24px;align-items:center;min-height:min(78vh,760px)}
+.hero-copy{position:relative;z-index:2;min-width:0}
+.hero h1{font-size:clamp(36px,4.4vw,66px);margin-top:20px}
+.hero h1 .ln{display:block;overflow:hidden;padding:.04em .2em .08em 0;margin-right:-.2em}
+.hero h1 .ln>span{display:inline-block}
+.hero h1 .b{color:var(--blue);-webkit-text-stroke:0}
+.hero h1 .o{color:transparent;-webkit-text-stroke:2px var(--white)}
+.hero .lede{max-width:46ch;color:#C5CAD6;font-size:19.5px;margin-top:24px}
+.hero .lede b{color:#fff;font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+
+.tx-wrap{position:relative;min-width:0;margin-right:-4%}
+.tx{width:100%;height:auto;display:block;overflow:visible}
+.tx .shadow{fill:#000;transform:translate(14px,16px)}
+.tx .edge{fill:none;stroke:var(--blue);stroke-width:7;stroke-linejoin:round}
+.tx image{transition:opacity 1.4s ease}
+.tx .tint{fill:url(#txTint)}
+.seal{position:absolute;left:2%;bottom:4%;width:clamp(120px,15vw,176px);aspect-ratio:1;z-index:3}
+.seal svg{width:100%;height:100%;overflow:visible}
+.seal .ring{animation:spin 26s linear infinite;transform-origin:50% 50%}
+.seal text{font:400 13.4px var(--f-west);letter-spacing:2.6px;fill:var(--white)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.pin{position:absolute;right:31%;top:61%;z-index:3;display:flex;align-items:center;gap:10px;background:var(--white);color:var(--black);padding:10px 14px 10px 10px;border-radius:999px;font:700 13px/1 var(--f-label);letter-spacing:.12em;text-transform:uppercase;box-shadow:0 18px 40px -16px rgba(0,0,0,.7)}
+.pin i{width:26px;height:26px;border-radius:50%;background:var(--red);display:grid;place-items:center}
+.pin i svg{width:14px;height:14px;color:#fff}
+.pin::after{content:"";position:absolute;left:22px;bottom:-7px;width:14px;height:14px;background:var(--white);transform:rotate(45deg);border-radius:2px}
+
+/* proof marquee */
+.proof{background:var(--blue);color:#fff;overflow:hidden;overflow:clip;contain:paint;transform:rotate(-1.6deg) scale(1.03);margin-block:-6px 0;position:relative;z-index:4;box-shadow:0 20px 50px -20px rgba(30,60,255,.7)}
+.proof .track{display:flex;width:max-content;animation:mq 34s linear infinite;padding-block:20px}
+.proof span{display:inline-flex;align-items:center;gap:26px;padding-right:26px;font:900 italic 18px/1 var(--f-display);font-stretch:106%;text-transform:uppercase;letter-spacing:.01em;white-space:nowrap}
+.proof svg{width:20px;height:20px;color:var(--white);flex:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* stats */
+.stats{background:var(--concrete);color:var(--black);padding-block:120px 110px}
+.stats .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:64px}
+.stats h2{font-size:clamp(28px,3.2vw,46px);max-width:20ch}
+.stats h2 em{font-style:italic;color:var(--blue)}
+.stats-top{display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:end}
+.stats-top p{color:var(--mute-dark);font-size:19px;max-width:40ch}
+.nums{display:grid;grid-template-columns:repeat(4,1fr);border-top:3px solid var(--black)}
+.num{padding:26px 22px 0 0;border-right:1px solid var(--concrete-2);min-width:0}
+.num:last-child{border-right:0}
+.num:not(:first-child){padding-left:22px}
+.num b{display:block;font:900 italic clamp(40px,4.2vw,64px)/.95 var(--f-display);font-stretch:108%;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.num b sup{font-size:.4em;vertical-align:top;color:var(--blue);margin-left:2px}
+.num span{display:block;margin-top:14px;font:700 14px/1.35 var(--f-label);letter-spacing:.12em;text-transform:uppercase;color:var(--mute-dark)}
+
+/* builders */
+.builders{padding-block:120px;position:relative}
+.builders .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.b-photo{position:relative;min-width:0}
+.b-photo .main{border-radius:6px;overflow:hidden;aspect-ratio:4/5;clip-path:polygon(0 0,100% 0,100% 92%,88% 100%,0 100%)}
+.b-photo .main img{width:100%;height:115%;object-fit:cover;will-change:transform}
+.b-photo .badge{position:absolute;right:-22px;top:28px;background:var(--red);color:#fff;padding:18px 20px;border-radius:4px;transform:rotate(4deg);box-shadow:0 20px 40px -18px rgba(0,0,0,.8);max-width:220px}
+.b-photo .badge b{display:block;font:900 italic 24px/1 var(--f-display);font-stretch:106%;text-transform:uppercase}
+.b-photo .badge span{display:block;font:700 12.5px/1.3 var(--f-label);letter-spacing:.12em;text-transform:uppercase;margin-top:8px;opacity:.92}
+.builders h2{font-size:clamp(28px,3vw,44px);margin-top:18px}
+.builders h2 .b{color:var(--blue)}
+.builders .intro{color:#C5CAD6;margin-top:22px;max-width:48ch}
+.perks{list-style:none;padding:0;margin:34px 0 0;display:grid;gap:0;border-top:1px solid rgba(255,255,255,.12)}
+.perks li{display:grid;grid-template-columns:44px 1fr;gap:16px;padding-block:20px;border-bottom:1px solid rgba(255,255,255,.12)}
+.perks .ic{width:44px;height:44px;border-radius:6px;background:rgba(30,60,255,.16);color:var(--blue-hi);display:grid;place-items:center}
+.perks .ic svg{width:22px;height:22px}
+.perks h3{font-size:18px;font-stretch:104%;line-height:1.15}
+.perks p{color:var(--mute);font-size:16px;margin-top:6px}
+
+/* pour sequence */
+.pour{background:var(--blue);color:#fff;padding-block:120px 130px;overflow:hidden}
+.pour .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:56px}
+.pour-head{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}
+.pour h2{font-size:clamp(30px,3.4vw,50px)}
+.pour h2 .o{color:transparent;-webkit-text-stroke:2px #fff}
+.pour-head p{color:#DCE1FF;font-size:19px;max-width:42ch}
+.seq{position:relative}
+.rail{position:absolute;left:0;right:0;top:30px;height:10px;border-radius:10px;background:rgba(255,255,255,.18);overflow:hidden}
+.rail i{position:absolute;inset:0;background:linear-gradient(90deg,#fff,#E4E3DE);transform-origin:left;transform:scaleX(var(--p,1))}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,1fr);gap:20px;position:relative}
+.stp{min-width:0}
+.stp>*{min-width:0}
+.stp .dot{width:70px;height:70px;border-radius:50%;background:var(--blue);border:3px solid rgba(255,255,255,.35);display:grid;place-items:center;font:900 italic 21px/1 var(--f-display);font-stretch:104%;transition:background .4s,border-color .4s,color .4s,transform .5s var(--ease)}
+.stp.on .dot{background:#fff;color:var(--blue);border-color:#fff;transform:scale(1.06)}
+.stp h3{font-size:17px;font-stretch:104%;line-height:1.1;margin-top:22px}
+.stp p{font-size:15.5px;line-height:1.5;color:#DCE1FF;margin-top:10px}
+.pour-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:24px;padding-top:36px;border-top:2px solid rgba(255,255,255,.25)}
+.pour-foot q{font:900 italic clamp(19px,1.9vw,26px)/1.15 var(--f-display);font-stretch:104%;text-transform:uppercase;quotes:"\201C" "\201D";max-width:30ch}
+.pour-foot small{display:block;font:700 13px/1 var(--f-label);letter-spacing:.16em;text-transform:uppercase;color:#DCE1FF;margin-top:12px}
+
+/* services stack */
+.svc{background:var(--concrete);color:var(--black);padding-block:120px 60px}
+.svc-head{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end;margin-bottom:56px}
+.svc h2{font-size:clamp(30px,3.4vw,50px)}
+.svc h2 .b{color:var(--blue)}
+.svc-head p{color:var(--mute-dark);font-size:19px;max-width:42ch}
+.cards{display:grid;gap:20px}
+.card{display:grid;grid-template-columns:1fr 1.05fr;background:var(--black);color:#fff;border-radius:10px;overflow:hidden;min-height:440px;box-shadow:0 30px 60px -30px rgba(7,9,15,.6)}
+.card:nth-child(2){background:#0B1660}
+.card:nth-child(3){background:#1B1E27}
+.card .ph{position:relative;min-height:260px}
+.card .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.card .bd{padding:40px 40px 36px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.card .k{font:700 13px/1 var(--f-label);letter-spacing:.18em;text-transform:uppercase;color:var(--blue-hi);display:flex;justify-content:space-between;gap:12px}
+.card:nth-child(2) .k{color:#9FB0FF}
+.card .k span:last-child{color:var(--mute)}
+.card h3{font-size:clamp(24px,2.2vw,32px)}
+.card p{color:#C5CAD6;max-width:46ch}
+.card ul{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.card li{font:700 14px/1 var(--f-label);letter-spacing:.06em;text-transform:uppercase;padding:10px 12px;border-radius:4px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12)}
+.card .btn{margin-top:auto;align-self:flex-start}
+.cards.is-stacking{display:block}
+.cards.is-stacking .card{margin-bottom:5rem;transform-origin:top center;backface-visibility:hidden;will-change:transform,filter}
+.stack-end{height:1px;margin-top:38vh}
+.certs{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+.cert{display:flex;align-items:center;gap:12px;padding:14px 18px;border-radius:6px;background:#fff;flex:1 1 230px;box-shadow:0 0 0 1px var(--concrete-2)}
+.cert svg{width:26px;height:26px;color:var(--blue);flex:none}
+.cert b{display:block;font:800 italic 15.5px/1.2 var(--f-display);font-stretch:104%;text-transform:uppercase}
+.cert span{font-size:14px;color:var(--mute-dark)}
+
+/* horizontal gallery */
+.hscroll{position:relative;background:var(--black)}
+.hs-sticky{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:32px}
+.hs-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
+.hs-head h2{font-size:clamp(30px,3.4vw,50px)}
+.hs-head h2 .o{color:transparent;-webkit-text-stroke:2px var(--white)}
+.hs-head p{color:var(--mute);max-width:34ch}
+.hs-track{display:flex;gap:18px;width:max-content;padding-left:var(--gl);padding-right:var(--gr);will-change:transform}
+.shot{all:unset;position:relative;height:min(56vh,520px);aspect-ratio:var(--ar);border-radius:8px;overflow:hidden;cursor:zoom-in;flex:none;background:#151924}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease)}
+.shot:hover img{transform:scale(1.05)}
+.shot span{position:absolute;left:14px;bottom:14px;background:rgba(7,9,15,.78);backdrop-filter:blur(6px);padding:8px 12px;border-radius:4px;font:700 13px/1 var(--f-label);letter-spacing:.12em;text-transform:uppercase}
+.shot:focus-visible{outline:3px solid var(--blue-hi);outline-offset:3px}
+.hs-bar{height:4px;background:rgba(255,255,255,.12);border-radius:4px;overflow:hidden;max-width:1280px;margin:0 auto;width:calc(100% - 32px)}
+.hs-bar i{display:block;height:100%;background:var(--blue);transform-origin:left;transform:scaleX(var(--p,0))}
+.hscroll.static{height:auto!important}
+.hscroll.static .hs-sticky{position:static;height:auto;padding-block:100px}
+.hscroll.static .hs-viewport{overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory}
+.hscroll.static .shot{scroll-snap-align:start}
+.hscroll.static .hs-bar{display:none}
+
+/* why */
+.why{background:var(--concrete);color:var(--black);padding-block:120px;overflow:hidden}
+.why .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
+.since{position:relative}
+.since .yr{font:400 clamp(80px,10vw,150px)/.9 var(--f-west);color:var(--blue);letter-spacing:-.02em}
+.since .yr small{display:block;font:900 italic 18px/1 var(--f-display);font-stretch:106%;color:var(--black);letter-spacing:.04em;text-transform:uppercase;margin-bottom:14px}
+.since p{margin-top:24px;color:var(--mute-dark);max-width:40ch}
+.why h2{font-size:clamp(28px,3vw,44px)}
+.why h2 .b{color:var(--blue)}
+.why-list{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}
+.why-item{background:#fff;border-radius:8px;padding:22px;box-shadow:0 0 0 1px var(--concrete-2);min-width:0}
+.why-item b{display:block;font:900 italic 17px/1.15 var(--f-display);font-stretch:104%;text-transform:uppercase}
+.why-item span{display:block;color:var(--mute-dark);font-size:15.5px;margin-top:8px;line-height:1.5}
+
+/* cta */
+.cta{padding-block:120px;background:radial-gradient(60% 70% at 15% 30%,rgba(30,60,255,.25),transparent 70%),var(--black)}
+.cta .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.cta h2{font-size:clamp(34px,4.2vw,62px)}
+.cta h2 .b{color:var(--blue)}
+.cta .intro{color:#C5CAD6;margin-top:22px;max-width:44ch}
+.phone{display:inline-flex;align-items:center;gap:14px;margin-top:30px;text-decoration:none;font:900 italic clamp(26px,2.8vw,40px)/1.1 var(--f-display);font-stretch:104%;padding-right:.15em;letter-spacing:-.01em}
+.phone i{width:64px;height:64px;border-radius:50%;background:var(--blue);display:grid;place-items:center;flex:none;box-shadow:0 0 0 0 rgba(30,60,255,.6);animation:ping 2.2s ease-out infinite}
+.phone i svg{width:28px;height:28px}
+.phone:hover{color:var(--blue-hi)}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(30,60,255,.55)}80%,100%{box-shadow:0 0 0 22px rgba(30,60,255,0)}}
+.info{display:grid;gap:14px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,.12)}
+.info div{display:grid;grid-template-columns:90px 1fr;gap:14px}
+.info dt{font:700 13px/1.7 var(--f-label);letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.info dd{margin:0}
+.form{background:var(--white);color:var(--black);border-radius:10px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:16px;min-width:0;box-shadow:0 40px 80px -40px rgba(30,60,255,.6)}
+.form h3{grid-column:1/-1;font-size:26px}
+.form .sub{grid-column:1/-1;color:var(--mute-dark);font-size:16px;margin-top:-6px}
+.fld{display:grid;gap:6px;min-width:0}
+.fld.full{grid-column:1/-1}
+.fld label,.fld .lb{font:700 13px/1 var(--f-label);letter-spacing:.14em;text-transform:uppercase;color:var(--mute-dark)}
+.fld input,.fld select,.fld textarea{font:500 16px/1.4 var(--f-body);color:var(--black);background:#fff;border:2px solid var(--concrete-2);border-radius:6px;padding:13px 14px;width:100%;transition:border-color .2s,box-shadow .2s}
+.fld textarea{min-height:110px;resize:vertical}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 4px rgba(30,60,255,.15)}
+.chips{position:relative;display:flex;flex-wrap:wrap;gap:8px}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips label{font:700 14px/1 var(--f-label);letter-spacing:.1em;text-transform:uppercase;color:var(--black);padding:12px 14px;border-radius:6px;background:#fff;border:2px solid var(--concrete-2);cursor:pointer;transition:.2s}
+.chips input:checked+label{background:var(--blue);border-color:var(--blue);color:#fff}
+.chips input:focus-visible+label{outline:3px solid var(--blue-hi);outline-offset:2px}
+.form .btn{grid-column:1/-1;width:100%}
+.done{grid-column:1/-1;background:#E3F6EC;color:#0D5C37;border-radius:6px;padding:14px 16px;font-weight:600;font-size:15.5px}
+
+/* footer */
+footer{position:relative;overflow:hidden;padding-block:72px 40px;background:#040509;color:var(--mute)}
+.giant{font:900 italic min(10.2vw,150px)/.95 var(--f-display);font-stretch:104%;text-align:center;padding-right:.1em;text-transform:uppercase;letter-spacing:-.03em;color:transparent;-webkit-text-stroke:1.5px rgba(92,115,255,.4);white-space:nowrap;will-change:transform;user-select:none}
+.ft-row{display:flex;justify-content:space-between;align-items:center;gap:28px;flex-wrap:wrap;margin-top:44px}
+
+.ft-row .btns{display:flex;flex-wrap:wrap;gap:12px}
+.ft-bot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:40px;padding-top:24px;border-top:1px solid #161a28;font:600 14px/1.5 var(--f-label);letter-spacing:.06em}
+.ft-bot a{color:#fff;text-decoration:none;border-bottom:1px solid var(--blue)}
+.ft-bot a:hover{color:var(--blue-hi)}
+.heart{display:inline-block;color:var(--red);animation:beat 1.6s ease-in-out infinite}
+@keyframes beat{0%,60%,100%{transform:scale(1)}20%{transform:scale(1.25)}40%{transform:scale(.95)}}
+
+/* lightbox */
+.lightbox{position:fixed;inset:0;z-index:120;background:rgba(4,5,9,.94);display:grid;place-items:center;padding:24px max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px))}
+.lightbox img{max-height:82vh;width:auto;border-radius:8px}
+.lightbox p{text-align:center;margin-top:12px;font:700 14px/1 var(--f-label);letter-spacing:.12em;text-transform:uppercase;color:#C5CAD6}
+.lightbox .x{position:absolute;top:calc(14px + env(safe-area-inset-top,0px));right:calc(14px + env(safe-area-inset-right,0px));width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:var(--black);font:700 24px/1 var(--f-body);cursor:pointer}
+
+.callbar{display:none}
+
+/* motion: content is visible at rest; JS adds .js for entrances */
+.js .rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.js .hero h1 .ln>span{transform:translateY(108%);transition:transform 1.05s var(--ease)}
+.js.loaded .hero h1 .ln>span{transform:none}
+.js.loaded .hero h1 .ln:nth-child(2)>span{transition-delay:.09s}
+.js.loaded .hero h1 .ln:nth-child(3)>span{transition-delay:.18s}
+.js .tx-wrap{opacity:0;transform:scale(.92) rotate(-3deg);transition:opacity 1.2s var(--ease) .25s,transform 1.4s var(--ease) .25s}
+.js.loaded .tx-wrap{opacity:1;transform:none}
+
+
+/* 3D hero slab (WebGL). The SVG stays as the fallback and the layout box. */
+.tx3d{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);pointer-events:none;opacity:0;transition:opacity 1s ease;z-index:1}
+.tx{transition:opacity .7s ease}
+.tx-wrap.has3d .tx3d{opacity:1}
+.tx-wrap.has3d .tx{opacity:0}
+
+/* slab build: four layers assemble as you scroll */
+.iso{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:40px;align-items:center;min-height:clamp(250px,29vw,380px)}
+.iso-stage{display:grid;place-items:center;perspective:1700px;min-width:0}
+.iso-stack{--p:1;--pour:1;position:relative;width:min(44vw,540px);aspect-ratio:1.6;transform:rotateX(57deg) rotateZ(-33deg);transform-style:preserve-3d}
+.iso-l{--t:6px;position:absolute;inset:0;transform-style:preserve-3d;transform:translateZ(calc(var(--i) * 15px + var(--i) * (1 - var(--p)) * 62px));transition:opacity .45s ease}
+.iso-l .tp,.iso-l .sf,.iso-l .sl{position:absolute;display:block}
+.iso-l .tp{inset:0;border-radius:3px}
+.iso-l .sf{left:0;right:0;top:100%;height:var(--t);transform-origin:top;transform:rotateX(-90deg)}
+.iso-l .sl{top:0;bottom:0;right:100%;width:var(--t);transform-origin:right;transform:rotateY(-90deg)}
+.l-pad{--i:0;--t:26px}
+.l-pad .tp{background:#8A7455 radial-gradient(rgba(0,0,0,.18) 1px,transparent 1.6px) 0 0/9px 9px}
+.l-pad .sf{background:#5E4E38}
+.l-pad .sl{background:#4A3D2B}
+.l-vb{--i:1}
+.l-vb .tp{background:linear-gradient(120deg,rgba(255,255,255,.5),rgba(190,205,255,.28) 40%,rgba(255,255,255,.42));box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.75)}
+.l-st{--i:2}
+.l-st .tp{background:repeating-linear-gradient(0deg,transparent 0 9.2%,#F2F4FF 9.2% 10%),repeating-linear-gradient(90deg,transparent 0 5.9%,#F2F4FF 5.9% 6.4%);filter:drop-shadow(0 2px 0 rgba(7,9,15,.35))}
+.l-cc{--i:3;--t:30px}
+.cc-in{position:absolute;inset:0;transform-style:preserve-3d;transform-origin:left;transform:scaleX(var(--pour))}
+.l-cc .tp{background:#E4E3DE repeating-linear-gradient(90deg,rgba(7,9,15,.05) 0 1px,transparent 1px 5px)}
+.l-cc .sf{background:#B9B8B1}
+.l-cc .sl{background:#9F9E98}
+.iso.live .iso-l:not(.on){opacity:0}
+.iso-key{list-style:none;margin:0;padding:0;display:grid;gap:10px;min-width:210px}
+.iso-key li{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:6px;border:1.5px solid rgba(255,255,255,.28);font:700 14px/1.2 var(--f-label);letter-spacing:.12em;text-transform:uppercase;transition:background .4s,color .4s,border-color .4s,transform .5s var(--ease)}
+.iso-key li i{width:12px;height:12px;border-radius:3px;background:var(--c);flex:none;box-shadow:0 0 0 2px rgba(255,255,255,.5)}
+.iso.live .iso-key li:not(.on){opacity:.55}
+.iso-key li.on{background:#fff;color:var(--blue);border-color:#fff;transform:translateX(-6px)}
+
+/* pointer tilt */
+.tilt{will-change:transform}
+@media (max-width:1060px){
+  .iso{grid-template-columns:1fr;gap:28px}
+  .iso-stack{width:min(70vw,460px)}
+  .iso-key{grid-template-columns:1fr 1fr;min-width:0}
+  .iso-key li.on{transform:none}
+  .nav{display:none}
+  .hero .wrap{grid-template-columns:1fr;min-height:0}
+  .tx-wrap{order:-1;margin:0 auto;max-width:620px;width:100%}
+
+  .stats-top,.pour-head,.svc-head,.builders .wrap,.why .wrap,.cta .wrap{grid-template-columns:1fr}
+  .nums{grid-template-columns:repeat(2,1fr)}
+  .num:nth-child(2){border-right:0}
+  .num:nth-child(3){padding-left:0}
+  .num:nth-child(n+3){margin-top:26px;border-top:1px solid var(--concrete-2)}
+  .steps{grid-template-columns:1fr;gap:0}
+  .rail{left:34px;right:auto;top:0;bottom:0;width:10px;height:auto}
+  .rail i{transform-origin:top;transform:scaleY(var(--p,1))}
+  .stp{display:grid;grid-template-columns:70px 1fr;column-gap:22px;padding-bottom:30px}
+  .stp .dot{grid-row:span 2}
+  .stp h3{margin-top:8px}
+  .card{grid-template-columns:1fr}
+  .b-photo{max-width:560px}
+}
+@media (max-width:640px){
+  body{font-size:17px}
+  .top .wrap{gap:12px}
+  .logo{height:40px}
+  .top .btn .t{display:none}
+  .top .btn{padding:0 14px}
+  .hero{padding-block:24px 56px}
+  .hero .lede{font-size:17.5px}
+  .ctas .btn{flex:1 1 100%}
+  .seal{width:104px;left:0;bottom:0}
+  .pin{display:none}
+  .iso-key li{font-size:12.5px;padding:10px;gap:8px;letter-spacing:.08em}
+  .proof span{font-size:18px}
+  .stats,.builders,.pour,.why,.cta{padding-block:80px}
+  .svc{padding-block:80px 40px}
+  .b-photo .badge{right:-6px}
+  .card .bd{padding:26px}
+  .card{min-height:0}
+  .why-list{grid-template-columns:1fr}
+  .form{grid-template-columns:1fr;padding:24px}
+  .info div{grid-template-columns:76px 1fr}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:100;gap:10px;background:rgba(7,9,15,.94);backdrop-filter:blur(10px);padding:10px max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));border-top:1px solid rgba(255,255,255,.08)}
+  .callbar .btn{flex:1;--h:50px;padding:0 10px}
+  footer{padding-bottom:120px}
+  .logo-ft{height:60px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .btn::before,.ripple{display:none}
+  .btn:active{transform:none}
+  .proof .track,.seal .ring,.heart,.phone i{animation:none}
+  .js .rv,.js .hero h1 .ln>span,.js .tx-wrap{opacity:1!important;transform:none!important;transition:none!important}
+  .brand:hover .lg-b{transform:none}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.5l3.09 7.02 7.66.7-5.8 5.08 1.72 7.5L12 17.9l-6.67 3.9 1.72-7.5-5.8-5.08 7.66-.7z"/></symbol>
+    <symbol id="phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  </defs>
+</svg>
+
+<div class="prog" id="prog" aria-hidden="true"></div>
+<div class="demo"><div class="wrap">Concept website by Mago Labs. Not a real business.</div></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Ironbend Concrete Co. home"><svg class="logo" viewBox="0 0 250 64" role="img" aria-label="Ironbend Concrete Co."><rect class="lg-b" x="1" y="2" width="60" height="60" rx="11"/><path class="lg-i" d="M18 15h30l-1.3 8H38.5l-2.9 18h8.2l-1.3 8h-30l1.3-8h8.2l2.9-18h-8.2z"/><text class="lg-n" x="74" y="33">IRONBEND</text><text class="lg-s" x="75" y="52">CONCRETE CO. · EST. 1994</text></svg></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#builders">For Builders</a>
+      <a href="#pour">How We Pour</a>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#bid">Get a Bid</a>
+    </nav>
+    <a class="btn btn-blue btn-sm" href="tel:+12105550147" aria-label="Call Ironbend Concrete at 210-555-0147"><svg><use href="#phone"/></svg><span class="t">(210) 555-0147</span></a>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero grain" aria-labelledby="h1">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="label"><svg class="st"><use href="#star"/></svg>San Antonio, Texas · Since 1994</p>
+      <h1 id="h1">
+        <span class="ln"><span>The ground</span></span>
+        <span class="ln"><span class="b">South Texas</span></span>
+        <span class="ln"><span>builds on<span class="b">.</span></span></span>
+      </h1>
+      <p class="lede">Slab foundations and turnkey concrete for <b>homebuilders, GCs and developers</b> from San Antonio to the Hill Country. Checked before every pour. Supervised during every pour. Since 1994.</p>
+      <div class="ctas">
+        <a class="btn btn-blue" href="#bid">Get a bid<svg><use href="#arrow"/></svg></a>
+        <a class="btn btn-line" href="tel:+12105550147"><svg><use href="#phone"/></svg>(210) 555-0147</a>
+      </div>
+    </div>
+
+    <div class="tx-wrap">
+      <svg class="tx" viewBox="-20 -20 1050 880" role="img" aria-label="Map of Texas filled with photos of concrete foundation work">
+        <defs>
+          <clipPath id="txClip"><path d="M255 0L249 14L251 325L0 324L0 361L108 460L122 480L137 533L175 573L209 593L238 598L268 584L295 542L342 542L388 583L425 650L424 701L439 712L470 714L483 758L504 790L591 827L591 833L641 833L655 811L657 793L635 760L630 720L638 712L684 710L690 675L679 666L679 655L685 647L693 645L697 635L714 621L743 618L775 600L798 557L836 552L868 536L875 527L906 536L980 536L994 467L1000 466L1000 418L967 404L891 405L856 336L850 231L844 223L773 190L692 200L662 191L620 196L583 190L567 178L539 178L504 156L475 150L467 0Z"/></clipPath>
+          <linearGradient id="txTint" x1="0" y1="0" x2="0" y2="1"><stop offset=".5" stop-color="#07090F" stop-opacity="0"/><stop offset="1" stop-color="#07090F" stop-opacity=".55"/></linearGradient>
+        </defs>
+        <path class="shadow" d="M255 0L249 14L251 325L0 324L0 361L108 460L122 480L137 533L175 573L209 593L238 598L268 584L295 542L342 542L388 583L425 650L424 701L439 712L470 714L483 758L504 790L591 827L591 833L641 833L655 811L657 793L635 760L630 720L638 712L684 710L690 675L679 666L679 655L685 647L693 645L697 635L714 621L743 618L775 600L798 557L836 552L868 536L875 527L906 536L980 536L994 467L1000 466L1000 418L967 404L891 405L856 336L850 231L844 223L773 190L692 200L662 191L620 196L583 190L567 178L539 178L504 156L475 150L467 0Z"/>
+        <g clip-path="url(#txClip)">
+          <rect width="1000" height="833" fill="#151924"/>
+          <image class="slide" href="img/hero-slab-site.webp" x="0" y="0" width="1000" height="833" preserveAspectRatio="xMidYMid slice"/>
+          <image class="slide" href="img/hero-rebar-crew.webp" x="0" y="0" width="1000" height="833" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+          <image class="slide" href="img/hero-site-walk.webp" x="0" y="0" width="1000" height="833" preserveAspectRatio="xMidYMid slice" opacity="0"/>
+          <rect class="tint" width="1000" height="833"/>
+        </g>
+        <path class="edge" d="M255 0L249 14L251 325L0 324L0 361L108 460L122 480L137 533L175 573L209 593L238 598L268 584L295 542L342 542L388 583L425 650L424 701L439 712L470 714L483 758L504 790L591 827L591 833L641 833L655 811L657 793L635 760L630 720L638 712L684 710L690 675L679 666L679 655L685 647L693 645L697 635L714 621L743 618L775 600L798 557L836 552L868 536L875 527L906 536L980 536L994 467L1000 466L1000 418L967 404L891 405L856 336L850 231L844 223L773 190L692 200L662 191L620 196L583 190L567 178L539 178L504 156L475 150L467 0Z"/>
+      </svg>
+      <div class="pin" aria-hidden="true"><i><svg><use href="#star"/></svg></i>San Antonio HQ</div>
+      <div class="seal" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <circle cx="100" cy="100" r="98" fill="#07090F" stroke="#1E3CFF" stroke-width="3"/>
+          <circle cx="100" cy="100" r="62" fill="#1E3CFF"/>
+          <g class="ring">
+            <path id="sealPath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0" fill="none"/>
+            <text><textPath href="#sealPath">Est. 1994 ★ San Antonio, Texas ★ </textPath></text>
+          </g>
+          <use href="#star" x="70" y="70" width="60" height="60" style="color:#fff"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="proof" aria-label="Accreditations">
+  <div class="track">
+    <span>Licensed, Bonded &amp; Insured<svg><use href="#star"/></svg>Post-Tension Trained Crews<svg><use href="#star"/></svg>Family Owned Since 1994<svg><use href="#star"/></svg>Six-Point Pour Check<svg><use href="#star"/></svg>Written Workmanship Guarantee<svg><use href="#star"/></svg>Texas Born &amp; Poured<svg><use href="#star"/></svg></span>
+    <span aria-hidden="true">Licensed, Bonded &amp; Insured<svg><use href="#star"/></svg>Post-Tension Trained Crews<svg><use href="#star"/></svg>Family Owned Since 1994<svg><use href="#star"/></svg>Six-Point Pour Check<svg><use href="#star"/></svg>Written Workmanship Guarantee<svg><use href="#star"/></svg>Texas Born &amp; Poured<svg><use href="#star"/></svg></span>
+  </div>
+</div>
+
+<section class="stats" aria-labelledby="h-stats">
+  <div class="wrap">
+    <div class="stats-top rv">
+      <h2 id="h-stats">The part of the house <em>nobody gets to redo.</em></h2>
+      <p>Homebuilders across San Antonio and the Hill Country have trusted us with it for three decades. Same crews. Same checklist. Lot after lot.</p>
+    </div>
+    <div class="nums">
+      <div class="num rv"><b data-to="32">32</b><span>Years pouring South Texas</span></div>
+      <div class="num rv"><b data-to="6">6</b><span>Point check before every pour</span></div>
+      <div class="num rv"><b data-to="3">3</b><span>Markets: residential, commercial, light industrial</span></div>
+      <div class="num rv"><b data-to="100">100<sup>%</sup></b><span>Bonded, insured and guaranteed</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="builders grain" id="builders" aria-labelledby="h-b">
+  <div class="wrap">
+    <div class="b-photo rv">
+      <div class="main"><img src="img/steel-tie-tall.webp" alt="Crew tying reinforcing steel ahead of a concrete pour" width="1048" height="1311" loading="lazy" data-par></div>
+      <div class="badge"><b>Turnkey</b><span>Forms to finish, one crew</span></div>
+    </div>
+    <div>
+      <p class="label"><svg class="st"><use href="#star"/></svg>Built for builders</p>
+      <h2 id="h-b">Your super has enough to chase. <span class="b">The slab isn't one.</span></h2>
+      <p class="intro">Production and custom home foundations, poured on your schedule. We work hand in hand with the builders and contractors across South Texas, from the first lot in a community to the last.</p>
+      <ul class="perks">
+        <li class="rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg></span><div><h3>An area manager on your communities</h3><p>One point of contact who knows your plans, your lots and your supers.</p></div></li>
+        <li class="rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg></span><div><h3>A completed checklist on every lot</h3><p>Dimensions, elevations, cable and steel, beams and level, signed off before the trucks roll.</p></div></li>
+        <li class="rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><div><h3>Every pour supervised</h3><p>Our area managers stay on site through placement for quality and consistency.</p></div></li>
+        <li class="rv"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V10l7-6 7 6v11"/><path d="M9 21v-6h6v6"/></svg></span><div><h3>Foundation to flatwork</h3><p>Drives, walks and leadwalks to close out the lot, without bringing in another sub.</p></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="pour grain" id="pour" aria-labelledby="h-pour">
+  <div class="wrap">
+    <div class="pour-head rv">
+      <h2 id="h-pour">Nothing gets poured <span class="o">until it's checked.</span></h2>
+      <p>Large or small, every foundation gets the same six steps. It's how we've kept builders coming back for over 30 years.</p>
+    </div>
+    <div class="iso" id="iso" aria-hidden="true">
+      <div class="iso-stage">
+        <div class="iso-stack" id="isoStack">
+          <div class="iso-l l-pad on"><i class="tp"></i><i class="sf"></i><i class="sl"></i></div>
+          <div class="iso-l l-vb on"><i class="tp"></i></div>
+          <div class="iso-l l-st on"><i class="tp"></i></div>
+          <div class="iso-l l-cc on"><div class="cc-in"><i class="tp"></i><i class="sf"></i><i class="sl"></i></div></div>
+        </div>
+      </div>
+      <ul class="iso-key">
+        <li class="on" style="--c:#8A7455"><i></i>Compacted pad</li>
+        <li class="on" style="--c:#BFD0FF"><i></i>Vapor barrier</li>
+        <li class="on" style="--c:#F2F4FF"><i></i>Cable &amp; steel</li>
+        <li class="on" style="--c:#E4E3DE"><i></i>Concrete placed</li>
+      </ul>
+    </div>
+    <div class="seq" id="seq">
+      <div class="rail" aria-hidden="true"><i id="railFill"></i></div>
+      <ol class="steps">
+        <li class="stp"><span class="dot">01</span><h3>Dimensions</h3><p>Forms checked against the builder's plans.</p></li>
+        <li class="stp"><span class="dot">02</span><h3>Elevations &amp; grade</h3><p>Pad elevation and grade confirmed on every lot.</p></li>
+        <li class="stp"><span class="dot">03</span><h3>Cable &amp; steel</h3><p>Post-tension cable and rebar placement verified.</p></li>
+        <li class="stp"><span class="dot">04</span><h3>Beam width &amp; depth</h3><p>Grade beams measured against the design.</p></li>
+        <li class="stp"><span class="dot">05</span><h3>Shot for level</h3><p>Every foundation shot for level before the pour.</p></li>
+        <li class="stp"><span class="dot">06</span><h3>Supervised pour</h3><p>An area manager on site through placement.</p></li>
+      </ol>
+    </div>
+    <div class="pour-foot rv">
+      <div><q>If it is not right on paper, it does not get poured.</q><small>The Ironbend rule since 1994</small></div>
+      <a class="btn btn-white" href="#bid">Put us on your next community<svg><use href="#arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="svc" id="services" aria-labelledby="h-svc">
+  <div class="wrap">
+    <div class="svc-head rv">
+      <h2 id="h-svc">One crew. <span class="b">Every kind of concrete.</span></h2>
+      <p>From the foundation under the house to the parking lot out front. Residential, commercial and light industrial across South Central Texas.</p>
+    </div>
+    <div class="cards" id="cards">
+      <article class="card">
+        <div class="ph"><img src="img/rebar-crew.webp" alt="Crew setting reinforcing steel on a structural slab" width="1500" height="993" loading="lazy"></div>
+        <div class="bd">
+          <p class="k"><span>01 · Foundations</span><span>Builders &amp; GCs</span></p>
+          <h3>Slab foundations</h3>
+          <p>Post-tension and conventional slabs for production and custom homes, plus the structural concrete that holds everything up.</p>
+          <ul><li>Slabs</li><li>Piers</li><li>Column pads &amp; footings</li><li>Retaining walls</li><li>Barn &amp; shop pads</li></ul>
+          <a class="btn btn-blue btn-sm" href="#bid" data-type="foundation">Bid a foundation<svg><use href="#arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/slab-site.webp" alt="Crew walking a large commercial slab site" width="1500" height="1000" loading="lazy"></div>
+        <div class="bd">
+          <p class="k"><span>02 · Commercial</span><span>Developers &amp; owners</span></p>
+          <h3>Paving &amp; commercial</h3>
+          <p>Parking lots, streets and alleys and light industrial work, built to carry traffic and South Texas heat.</p>
+          <ul><li>Parking lots</li><li>Streets &amp; alleys</li><li>Paving &amp; sealing</li><li>Removal &amp; replacement</li></ul>
+          <a class="btn btn-blue btn-sm" href="#bid" data-type="commercial">Bid a commercial job<svg><use href="#arrow"/></svg></a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ph"><img src="img/driveway.webp" alt="Wide concrete driveway in front of a modern home" width="1500" height="1000" loading="lazy"></div>
+        <div class="bd">
+          <p class="k"><span>03 · Flatwork</span><span>Homeowners welcome too</span></p>
+          <h3>Driveways &amp; flatwork</h3>
+          <p>Driveways, patios and walks with clean lines and the right finish, whether it's a builder closeout or your own home.</p>
+          <ul><li>Driveways</li><li>Sidewalks, steps &amp; curbs</li><li>Patios &amp; leadwalks</li><li>Broom &amp; salt finish</li><li>Exposed aggregate</li></ul>
+          <a class="btn btn-blue btn-sm" href="#bid" data-type="driveway">Get a flatwork quote<svg><use href="#arrow"/></svg></a>
+        </div>
+      </article>
+    </div>
+    <div class="certs">
+      <div class="cert rv"><svg><use href="#star"/></svg><div><b>Post-tension trained crews</b><span>Cable and steel placed to the engineer's design</span></div></div>
+      <div class="cert rv"><svg><use href="#star"/></svg><div><b>Six-point pour check</b><span>Signed off on every lot before the trucks roll</span></div></div>
+      <div class="cert rv"><svg><use href="#star"/></svg><div><b>Bonded &amp; insured</b><span>And we guarantee all of our work</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="hscroll" id="work" aria-labelledby="h-work">
+  <div class="hs-sticky">
+    <div class="wrap hs-head">
+      <h2 id="h-work">Fresh off <span class="o">the pump.</span></h2>
+      <p>Jobs from our crews across South Texas. Tap a photo to see it full size.</p>
+    </div>
+    <div class="hs-viewport">
+      <div class="hs-track" id="track">
+        <button class="shot" style="--ar:3/2" data-cap="Commercial slab, crew walk"><img src="img/slab-site.webp" alt="Crew walking a large commercial slab site" width="1500" height="1000" loading="lazy"><span>Slab site</span></button>
+        <button class="shot" style="--ar:4/3" data-cap="Reinforcing steel going in"><img src="img/steel-tie.webp" alt="Crew tying reinforcing steel for a structural pour" width="1500" height="1092" loading="lazy"><span>Steel crew</span></button>
+        <button class="shot" style="--ar:3/2" data-cap="Steel set on a structural deck"><img src="img/rebar-crew.webp" alt="Workers setting reinforcing steel on a structural deck" width="1500" height="993" loading="lazy"><span>Steel ready</span></button>
+        <button class="shot" style="--ar:4/3" data-cap="Area managers on a pre-pour walk"><img src="img/site-walk.webp" alt="Two supervisors in hard hats reviewing a site before a pour" width="1500" height="1166" loading="lazy"><span>Pre-pour walk</span></button>
+        <button class="shot" style="--ar:4/3" data-cap="Pad prep and grading"><img src="img/site-prep.webp" alt="Excavators grading a pad for new foundations" width="1500" height="1124" loading="lazy"><span>Pad prep</span></button>
+        <button class="shot" style="--ar:3/2" data-cap="Broom finish driveway"><img src="img/driveway.webp" alt="Wide concrete driveway in front of a modern home" width="1500" height="1000" loading="lazy"><span>Driveway</span></button>
+        <button class="shot" style="--ar:3/2" data-cap="Sidewalk and leadwalk"><img src="img/sidewalk.webp" alt="Curved concrete sidewalk in front of a new brick home" width="1500" height="1000" loading="lazy"><span>Sidewalk</span></button>
+        <button class="shot" style="--ar:3/2" data-cap="Builder closeout: drive and approach"><img src="img/brick-home.webp" alt="Brick home with a finished concrete driveway and approach" width="1500" height="1000" loading="lazy"><span>Closeout</span></button>
+      </div>
+    </div>
+    <div class="hs-bar" aria-hidden="true"><i id="hsBar"></i></div>
+  </div>
+</section>
+
+<section class="why" aria-labelledby="h-why">
+  <div class="wrap">
+    <div class="since rv">
+      <p class="yr"><small>Established</small>1994</p>
+      <p>A San Antonio company that has poured South Texas since 1994. Family owned, plain dealing, and built on the idea that a builder should never have to chase the concrete sub.</p>
+    </div>
+    <div>
+      <p class="label" style="color:var(--mute-dark)"><svg class="st"><use href="#star"/></svg>Why Ironbend</p>
+      <h2 id="h-why" style="margin-top:18px">Three decades. <span class="b">Same standard.</span></h2>
+      <div class="why-list">
+        <div class="why-item rv"><b>Same crews, every lot</b><span>No rotating subs. The people who formed lot one pour lot ninety.</span></div>
+        <div class="why-item rv"><b>Licensed and insured</b><span>Fully licensed, bonded and insured for residential and commercial work.</span></div>
+        <div class="why-item rv"><b>Schedules that hold</b><span>Pour dates set with your super and kept, rain plans included.</span></div>
+        <div class="why-item rv"><b>Guaranteed work</b><span>Bonded, insured, and we stand behind every pour.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta grain" id="bid" aria-labelledby="h-bid">
+  <div class="wrap">
+    <div>
+      <p class="label"><svg class="st"><use href="#star"/></svg>Get a bid</p>
+      <h2 id="h-bid" style="margin-top:18px">Got lots? <span class="b">Let's pour.</span></h2>
+      <p class="intro">Send us your community, lot count and start date and we'll get you a number. Homeowners, tell us what you need poured and we'll call you back.</p>
+      <a class="phone" href="tel:+12105550147"><i><svg><use href="#phone"/></svg></i>(210) 555-0147</a>
+      <dl class="info">
+        <div><dt>Office</dt><dd>1840 Quarry Run Rd, San Antonio, TX</dd></div>
+        <div><dt>Hours</dt><dd>Monday to Saturday, 6am to 6pm</dd></div>
+        <div><dt>Area</dt><dd>San Antonio, New Braunfels, Boerne and the Hill Country</dd></div>
+      </dl>
+    </div>
+    <form class="form rv" id="form" novalidate>
+      <h3>Request a bid</h3>
+      <p class="sub">Takes about a minute. We'll call you back.</p>
+      <div class="fld full">
+        <span class="lb" id="who-l">I'm a</span>
+        <div class="chips" role="radiogroup" aria-labelledby="who-l">
+          <input type="radio" name="who" id="who-b" value="Homebuilder" checked><label for="who-b">Homebuilder</label>
+          <input type="radio" name="who" id="who-g" value="GC"><label for="who-g">GC / Developer</label>
+          <input type="radio" name="who" id="who-h" value="Homeowner"><label for="who-h">Homeowner</label>
+        </div>
+      </div>
+      <div class="fld"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" placeholder="Your name"></div>
+      <div class="fld"><label for="f-co">Company</label><input id="f-co" name="company" autocomplete="organization" placeholder="Optional"></div>
+      <div class="fld"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="(210) 555-0123"></div>
+      <div class="fld"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@company.com"></div>
+      <div class="fld"><label for="f-type">Project</label>
+        <select id="f-type" name="type">
+          <option value="foundation">Slab foundations</option>
+          <option value="commercial">Commercial / paving</option>
+          <option value="driveway">Driveway or flatwork</option>
+          <option value="pad">Barn or shop pad</option>
+          <option value="other">Something else</option>
+        </select></div>
+      <div class="fld"><label for="f-lots">Lots / size</label><input id="f-lots" name="lots" placeholder="e.g. 24 lots, or 600 sq ft"></div>
+      <div class="fld full"><label for="f-msg">Details</label><textarea id="f-msg" name="msg" placeholder="Community, city, start date, plans or anything else we should know"></textarea></div>
+      <button class="btn btn-blue" type="submit">Send my bid request<svg><use href="#arrow"/></svg></button>
+      <p class="done" id="done" hidden></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="giant" id="giant" aria-hidden="true">Ironbend</div>
+  <div class="wrap">
+    <div class="ft-row">
+      <svg class="logo logo-ft" viewBox="0 0 250 64" role="img" aria-label="Ironbend Concrete Co."><rect class="lg-b" x="1" y="2" width="60" height="60" rx="11"/><path class="lg-i" d="M18 15h30l-1.3 8H38.5l-2.9 18h8.2l-1.3 8h-30l1.3-8h8.2l2.9-18h-8.2z"/><text class="lg-n" x="74" y="33">IRONBEND</text><text class="lg-s" x="75" y="52">CONCRETE CO. · EST. 1994</text></svg>
+      <div class="btns">
+        <a class="btn btn-blue btn-sm" href="tel:+12105550147"><svg><use href="#phone"/></svg>Call (210) 555-0147</a>
+        <a class="btn btn-line btn-sm" href="#bid">Get a bid</a>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 Ironbend Concrete Co. · San Antonio, Texas · A fictional business for demonstration</span>
+      <span>Website concept made with <span class="heart">♥</span> by <a href="https://magolabs.in" target="_blank" rel="noopener">Mago Labs</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-blue" href="tel:+12105550147"><svg><use href="#phone"/></svg>Call now</a>
+  <a class="btn btn-white" href="#bid">Get a bid</a>
+</div>
+
+<div class="lightbox" id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" id="lbx" aria-label="Close">×</button>
+  <div><img id="lbi" alt=""><p id="lbc"></p></div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var root = document.documentElement;
+  var IO = 'IntersectionObserver' in window;
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){ root.classList.add('loaded'); }); });
+
+  /* reveal */
+  var rv = document.querySelectorAll('.rv');
+  if (reduce || !IO) rv.forEach(function(e){ e.classList.add('in'); });
+  else {
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -8% 0px'});
+    rv.forEach(function(e){ io.observe(e); });
+    setTimeout(function(){ rv.forEach(function(e){ e.classList.add('in'); }); }, 5000);
+  }
+
+  /* Texas slideshow */
+  var slides = document.querySelectorAll('.tx .slide'), si = 0;
+  if (!reduce && slides.length > 1) setInterval(function(){
+    slides[si].setAttribute('opacity','0'); si = (si+1) % slides.length; slides[si].setAttribute('opacity','1');
+  }, 4200);
+
+  /* count up */
+  var nums = document.querySelectorAll('[data-to]');
+  function count(el){
+    var to = +el.dataset.to, sup = el.querySelector('sup'), html = sup ? sup.outerHTML : '', t0 = null;
+    function f(t){ if(!t0) t0=t; var p=Math.min((t-t0)/1500,1), v=Math.round(to*(1-Math.pow(1-p,3))); el.innerHTML = v + html; if(p<1) requestAnimationFrame(f); }
+    requestAnimationFrame(f);
+  }
+  if (!reduce && IO){
+    var no = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ count(e.target); no.unobserve(e.target); } }); }, {threshold:.6});
+    nums.forEach(function(n){ no.observe(n); });
+  }
+
+  /* scroll-linked: pour rail, gallery, parallax */
+  var seq = document.getElementById('seq'), fill = document.getElementById('railFill'), stps = seq.querySelectorAll('.stp');
+  var hs = document.querySelector('.hscroll'), track = document.getElementById('track'), bar = document.getElementById('hsBar');
+  var giant = document.getElementById('giant'), par = document.querySelector('[data-par]');
+  var prog = document.getElementById('prog'), iso = document.getElementById('iso'), isoStack = document.getElementById('isoStack');
+  var isoL = iso.querySelectorAll('.iso-l'), isoK = iso.querySelectorAll('.iso-key li'), isoAt = [0.02, 0.2, 0.38, 0.58];
+  if (!reduce) iso.classList.add('live');
+  var hsStatic = reduce || innerWidth < 760;
+  var dist = 0;
+  function sizeHS(){
+    hsStatic = reduce || innerWidth < 760;
+    hs.classList.toggle('static', hsStatic);
+    if (hsStatic){ hs.style.height=''; track.style.transform=''; return; }
+    dist = Math.max(0, track.scrollWidth - innerWidth);
+    hs.style.height = (innerHeight + dist) + 'px';
+  }
+  function clamp(v){ return v<0?0:v>1?1:v; }
+  var queued = false;
+  function frame(){
+    queued = false;
+    var vh = innerHeight;
+    var r = seq.getBoundingClientRect();
+    var p = reduce ? 1 : clamp((vh*0.75 - r.top) / (r.height + vh*0.2));
+    fill.style.setProperty('--p', p.toFixed(3));
+    stps.forEach(function(s,i){ s.classList.toggle('on', p >= (i+0.4)/stps.length || reduce); });
+    var max = document.documentElement.scrollHeight - vh;
+    prog.style.setProperty('--p', (max > 0 ? clamp(scrollY / max) : 0).toFixed(4));
+    if (!reduce){
+      var ir = iso.getBoundingClientRect(), ip = clamp((vh*0.9 - ir.top) / (vh*0.62));
+      isoStack.style.setProperty('--p', clamp(ip*1.12).toFixed(3));
+      isoStack.style.setProperty('--pour', clamp((ip - 0.6) / 0.3).toFixed(3));
+      for (var li = 0; li < isoL.length; li++){ var on = ip >= isoAt[li]; isoL[li].classList.toggle('on', on); isoK[li].classList.toggle('on', on); }
+    }
+    if (!hsStatic){
+      var hr = hs.getBoundingClientRect(), hp = clamp(-hr.top / (hr.height - vh || 1));
+      track.style.transform = 'translate3d(' + (-dist*hp).toFixed(1) + 'px,0,0)';
+      bar.style.setProperty('--p', hp.toFixed(3));
+    }
+    if (!reduce){
+      var fr = giant.getBoundingClientRect();
+      if (fr.top < vh) giant.style.transform = 'translate3d(0,' + ((fr.top - vh*0.6) * 0.12).toFixed(1) + 'px,0)';
+      var pr = par.getBoundingClientRect();
+      if (pr.bottom > 0 && pr.top < vh) par.style.transform = 'translate3d(0,' + ((pr.top + pr.height/2 - vh/2) * -0.08 - 30).toFixed(1) + 'px,0)';
+    }
+  }
+  function onScroll(){ if(!queued){ queued=true; requestAnimationFrame(frame); } }
+  sizeHS(); frame();
+  addEventListener('scroll', onScroll, {passive:true});
+  addEventListener('resize', function(){ sizeHS(); frame(); });
+  addEventListener('load', function(){ sizeHS(); frame(); });
+
+  /* scroll-stack service cards (Mago standard) */
+  (function(){
+    if (reduce || innerWidth < 760) return;
+    var wrap = document.getElementById('cards'), cards = [].slice.call(wrap.querySelectorAll('.card'));
+    var end = document.createElement('div'); end.className='stack-end'; end.setAttribute('aria-hidden','true'); wrap.appendChild(end);
+    var C = {pos:.14, scaleEnd:.06, d:22, s:.05, b:1.2}, base = 1-(cards.length-1)*C.s;
+    var rel=[], relEnd=0, deck=0, vh=0, q=false;
+    function prog(v,a,b){ return v<a?0:v>b?1:(v-a)/(b-a); }
+    function measure(){
+      vh = innerHeight;
+      cards.forEach(function(c){ c.style.transform='none'; c.style.filter=''; });
+      var wt = wrap.getBoundingClientRect().top;
+      rel = cards.map(function(c){ return c.getBoundingClientRect().top - wt; });
+      relEnd = end.getBoundingClientRect().top - wt;
+      var tall = Math.max.apply(null, cards.map(function(c){ return c.offsetHeight; }));
+      deck = C.pos*vh + C.d*(cards.length-1) + tall;
+      apply();
+    }
+    function apply(){
+      var top = scrollY, wt = wrap.getBoundingClientRect().top + top, sp = C.pos*vh, se = C.scaleEnd*vh, pinEnd = wt + relEnd - deck, ti = 0;
+      for (var k=0;k<cards.length;k++) if (top >= wt + rel[k] - sp - C.d*k) ti = k;
+      cards.forEach(function(c,i){
+        var ct = wt + rel[i], ps = ct - sp - C.d*i, tg = base + i*C.s;
+        var sc = 1 - prog(top, ps, ct - se) * (1 - tg), ty = 0;
+        if (top >= ps) ty = (top > pinEnd ? pinEnd : top) - ct + sp + C.d*i;
+        var bl = i < ti ? (ti-i)*C.b : 0;
+        c.style.transform = 'translate3d(0,' + ty.toFixed(1) + 'px,0) scale(' + sc.toFixed(3) + ')';
+        c.style.filter = bl ? 'blur(' + bl.toFixed(1) + 'px)' : '';
+      });
+    }
+    wrap.classList.add('is-stacking');
+    measure();
+    addEventListener('scroll', function(){ if(!q){ q=true; requestAnimationFrame(function(){ q=false; apply(); }); } }, {passive:true});
+    addEventListener('resize', measure);
+    addEventListener('load', measure);
+    if (window.ResizeObserver) new ResizeObserver(measure).observe(wrap);
+  })();
+
+  /* 3D hero slab: loaded after first paint, SVG stays if WebGL is unavailable */
+  if (!reduce) addEventListener('load', function(){
+    var go = function(){
+      var sc = document.createElement('script'); sc.src = 'js/hero3d.min.js'; sc.async = true;
+      sc.onload = function(){ try { window.MagoHero3D(document.querySelector('.tx-wrap'), ['img/hero-slab-site.webp','img/hero-rebar-crew.webp','img/hero-site-walk.webp']); } catch(e){} };
+      document.head.appendChild(sc);
+    };
+    if ('requestIdleCallback' in window) requestIdleCallback(go, {timeout:1500}); else setTimeout(go, 300);
+  });
+
+  /* pointer tilt on cards (fine pointers only) */
+  if (!reduce && matchMedia('(hover:hover) and (pointer:fine)').matches){
+    document.querySelectorAll('.why-item,.cert,.num').forEach(function(el){
+      el.classList.add('tilt');
+      el.addEventListener('pointermove', function(e){
+        var r = el.getBoundingClientRect(), x = (e.clientX - r.left)/r.width - .5, y = (e.clientY - r.top)/r.height - .5;
+        el.style.transition = 'transform .12s ease-out';
+        el.style.transform = 'perspective(700px) rotateX(' + (-y*9).toFixed(2) + 'deg) rotateY(' + (x*11).toFixed(2) + 'deg) translateZ(6px)';
+      });
+      el.addEventListener('pointerleave', function(){ el.style.transition = 'transform .6s cubic-bezier(.2,.75,.1,1)'; el.style.transform = ''; });
+    });
+  }
+
+  /* ripple */
+  if (!reduce) document.addEventListener('pointerdown', function(e){
+    var el = e.target.closest('.btn'); if(!el) return;
+    var r = el.getBoundingClientRect(), d = document.createElement('span');
+    d.className='ripple'; d.style.left=(e.clientX-r.left)+'px'; d.style.top=(e.clientY-r.top)+'px';
+    d.addEventListener('animationend', function(){ d.remove(); }); el.appendChild(d);
+    setTimeout(function(){ d.remove(); }, 900);
+  }, {passive:true});
+
+  /* CTA buttons preselect the form */
+  document.querySelectorAll('[data-type]').forEach(function(a){
+    a.addEventListener('click', function(){
+      var t = a.dataset.type;
+      document.getElementById('f-type').value = t;
+      document.getElementById(t==='driveway' ? 'who-h' : t==='commercial' ? 'who-g' : 'who-b').checked = true;
+    });
+  });
+
+  /* lightbox */
+  var lb=document.getElementById('lb'), li=document.getElementById('lbi'), lc=document.getElementById('lbc'), last=null;
+  document.querySelectorAll('.shot').forEach(function(b){
+    b.addEventListener('click', function(){ var im=b.querySelector('img'); last=b; li.src=im.src; li.alt=im.alt; lc.textContent=b.dataset.cap; lb.hidden=false; document.getElementById('lbx').focus(); });
+  });
+  function close(){ lb.hidden=true; if(last) last.focus(); }
+  document.getElementById('lbx').addEventListener('click', close);
+  lb.addEventListener('click', function(e){ if(e.target===lb) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape' && !lb.hidden) close(); });
+
+  /* form (concept: nothing is sent) */
+  var f=document.getElementById('form'), done=document.getElementById('done');
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var n=document.getElementById('f-name'), p=document.getElementById('f-phone');
+    if(!n.value.trim()){ n.focus(); return; }
+    if(!p.value.trim()){ p.focus(); return; }
+    done.textContent='Thanks, ' + n.value.trim().split(' ')[0] + '. This is a concept website for a fictional business, so nothing was sent.';
+    done.hidden=false;
+  });
+})();
+</script>
+
+</body>
+</html>
